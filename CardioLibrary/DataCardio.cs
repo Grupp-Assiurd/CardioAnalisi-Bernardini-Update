@@ -19,9 +19,9 @@ namespace CardioLibrary
             double spesaEnergetica = 0;
             if (corsaCamminata.ToLower() == "corsa")
                 spesaEnergetica = 0.9 * km * peso;
-            else
+            else if(corsaCamminata.ToLower() == "camminata")
                 spesaEnergetica = 0.50 * km * peso;
-
+            
 
             return Math.Round(spesaEnergetica, 2);
         }
